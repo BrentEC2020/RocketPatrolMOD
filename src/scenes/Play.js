@@ -146,19 +146,19 @@ class Play extends Phaser.Scene {
 
         this.currentTime = Math.ceil(this.clock.getRemaining());
 
-        const speed = 1.5;
+        const speed = 2;
 
         this.shipSpeed = 5;
 
         const cam = this.cameras.main;
-        if (this.cursors.left.isDown) 
+        if (this.p1Rocket.x < (game.config.width / 2)) 
         {
-            cam.scrollX  -= speed * 2;
+            cam.scrollX  -= speed;
         }
 
-        if (this.cursors.right.isDown) 
+        if (this.p1Rocket.x > (game.config.width / 2)) 
         {
-            cam.scrollX  += speed * 2;
+            cam.scrollX  += speed;
         }
 
         // display FIRE indicator
