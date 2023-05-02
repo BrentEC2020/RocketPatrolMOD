@@ -5,7 +5,6 @@ class Spaceship extends Phaser.GameObjects.Sprite {
         scene.add.existing(this);
         this.points = pointValue;
         this.moveSpeed = game.settings.spaceshipSpeed;
-        this.random = Phaser.Math.Between(0, 1)
     }
 
     update() {
@@ -14,7 +13,7 @@ class Spaceship extends Phaser.GameObjects.Sprite {
         this.x -= this.moveSpeed;
 
         // wrap around from left edge to right edge
-        if (this.x <= -420 || this.x >= 420) {
+        if (this.x <= 0 - this.width) {
             this.x = game.config.width;
         }
     }
