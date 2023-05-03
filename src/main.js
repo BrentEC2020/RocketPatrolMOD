@@ -1,7 +1,7 @@
 /****************************************************************************************************************************
  * Brent Chou
  * Rocket Patrol: New Galaxy
- * Time TBD
+ * Time: 15 Hours
  * Create a new scrolling tile sprite for the background (5)
  * Allow the player to control the Rocket after it's fired (5)
  * Add your own (copyright-free) background music to the Play scene (please be mindful of the volume) (5)
@@ -10,6 +10,12 @@
  * Display the time remaining (in seconds) on the screen (10)
  * Create a new title screen (e.g., new artwork, typography, layout) (10)
  * Implement parallax scrolling for the background (10)
+ * 
+ * Notes On Parallax Scrolling:
+ * The Parallax Scrolling bounds that I have set are weird. You can go all the way to the left, but there is an
+ * invisible wall towards the right to prevent you from scrolling too far. You also have to finished going to the
+ * left before you go to the right again.
+ * 
  * Using a texture atlas, create a new animated sprite for the Spaceship enemies (10)
  * 
  * Notes On Spaceship Texture Atlas:
@@ -18,6 +24,10 @@
  * 
  * Create a new enemy Spaceship type (w/ new artwork) that's smaller, moves faster, and is worth more points (15)
  * Implement a new timing/scoring mechanism that adds time to the clock for successful hits (15)
+ * 
+ * Citations:
+ * https://stackoverflow.com/questions/29148886/show-hide-sprites-texts-in-phaser
+ * https://phaser.discourse.group/t/how-to-remove-text/742
  ****************************************************************************************************************************/
 
 let config = {
